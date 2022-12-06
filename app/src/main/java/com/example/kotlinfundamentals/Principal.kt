@@ -12,6 +12,12 @@ fun main(){
     var c: Int;
     c = 5;
     println("c = $c")
+
+    var obNull: String?
+    obNull = null
+
+
+
 }
 
 fun newTopic(topic: String ){
