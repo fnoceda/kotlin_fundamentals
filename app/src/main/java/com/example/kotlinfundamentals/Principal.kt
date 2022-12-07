@@ -21,11 +21,6 @@ fun main(){
 }
 
 fun newTopic(topic: String ){
-    println()
-    print("========== ")
-    print(topic);
-    print(" ==========")
-    println()
-    print("\n========== $topic ==========")
-    println()
+
+    print("\n========== $topic ==========\n")
 }
