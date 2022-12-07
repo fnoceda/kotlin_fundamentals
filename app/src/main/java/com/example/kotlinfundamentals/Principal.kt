@@ -1,5 +1,7 @@
 package com.example.kotlinfundamentals
 
+const val separator = "========== "
+
 fun main(){
     println("Hola Kotlin");
     newTopic("Variables y Constantes");
@@ -22,5 +24,5 @@ fun main(){
 
 fun newTopic(topic: String ){
 
-    print("\n========== $topic ==========\n")
+    print("\n$separator $topic $separator\n")
 }

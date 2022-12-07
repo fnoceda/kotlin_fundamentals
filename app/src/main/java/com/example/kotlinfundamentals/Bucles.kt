@@ -22,7 +22,20 @@ fun showPersons(vararg persons: String ){
     newTopic("While")
     var i = 0
     while(i < persons.size){
+        if(persons[i] == "Maria") println("Es Mary")
         println(persons[i])
         i++
     }
+    newTopic("When")
+    i = (0..persons.size -1 ).random()
+    when(persons[i]){ //switch en otros lenguajes
+        "Juan" -> println("Es Juan!!")
+        "Maria" -> {
+            println("Es Maria!!")
+            println("Ir a otra pantalla")
+        }
+        "Luis" -> println("Es Luis!!")
+        else -> println(persons[i])
+    }
+
 }
