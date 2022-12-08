@@ -5,5 +5,11 @@ fun main(){
     val phone: Phone=Phone(123)
     phone.call()
     phone.showNumber()
-    println(phone.number)
+//    println(phone.number)
+
+    newTopic("Herencia")
+    val smartphone = Smartphone(456, true)
+    smartphone.call()
+    smartphone.showNumber()
+    println("Es Privado => ${smartphone.isPrivate}")
 }

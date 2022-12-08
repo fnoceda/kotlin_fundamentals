@@ -1,11 +1,10 @@
 package com.example.kotlinfundamentals
 
-class Phone(val number: Int) {
+open class Phone(protected val number: Int) {
 
 
-fun call() =  print("llamando!")
+fun call() =  println("llamando!")
 
-fun showNumber(){
-    println(number)
-}
+open fun showNumber() = println("Mi numero es: $number")
+
 }
