@@ -13,7 +13,7 @@ fun main(){
     newTopic("Mutable List")
     val myUser = User(0, "Juan",  "Perez",  Group.FAMILY, Group.FAMILY.ordinal)
     val bro = myUser.copy( id =1,  name ="Luis")
-    val friend = bro.copy( id =1,  name ="Roberto", lastName = "Ruiz", group = Group.FRIENDS)
+    val friend = bro.copy( id =2,  name ="Roberto", lastName = "Ruiz", group = Group.FRIENDS)
 
     val userList = mutableListOf<User>(myUser,  bro)
     print(userList)
@@ -47,5 +47,25 @@ fun main(){
     userSelectedList.add(myUser)
     println(userSelectedList)
 
+    newTopic("Map")
+
+    val usersMap = mutableMapOf<Int, User>()
+    println(usersMap.isEmpty())
+    println(usersMap)
+
+    usersMap.put(myUser.id.toInt(), myUser)
+    println(usersMap)
+
+    usersMap.put(bro.id.toInt(), bro)
+    println(usersMap)
+
+    usersMap.put(friend.id.toInt(), friend)
+    println(usersMap)
+
+    usersMap.remove(0)
+    println(usersMap)
+
+    println(usersMap.keys)
+    println(usersMap.values)
 
 }
